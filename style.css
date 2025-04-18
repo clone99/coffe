@@ -12,16 +12,25 @@ body {
   padding: 2rem;
 }
 
-h1 {
+header {
   text-align: center;
+}
+
+h1 {
   color: #b5651d;
 }
 
-h2 {
-  margin-top: 2rem;
-  border-bottom: 2px solid #b5651d;
-  padding-bottom: 0.5rem;
-  color: #333;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #b5651d;
+  font-weight: bold;
 }
 
 ul {
@@ -41,4 +50,23 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #888;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .menu-container {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-bottom: 1rem;
+  }
 }
